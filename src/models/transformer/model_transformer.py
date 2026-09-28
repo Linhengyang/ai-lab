@@ -1,7 +1,6 @@
 from src.core.architectures import EncoderDecoder
 from src.core.layers.position_encoding import TrigonoAbsPosEnc
-from src.core.blocks.bert import BERTEncoderBlock
-from src.core.blocks.transformer import TransformerDecoderBlock
+from .nn_block_transformer import TransformerDecoderBlock, BERTEncoderBlock
 from src.core.generate import next_token_topk
 from .config_transformer import transformerConfig
 import torch.nn as nn

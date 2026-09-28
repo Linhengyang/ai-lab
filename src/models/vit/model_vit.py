@@ -1,7 +1,7 @@
 from src.core.architectures import Encoder
 from src.core.layers.position_encoding import LearnAbsPosEnc
 from src.core.layers.patchify import Patchify
-from src.core.blocks.vit import ViTEncoderBlock
+from .nn_block_vit import ViTEncoderBlock
 from .config_vit import vitConfig
 import torch.nn as nn
 import torch

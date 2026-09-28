@@ -1,6 +1,6 @@
 import torch.nn as nn
 import torch
-from src.core.blocks.bert import BERTEncoderBlock
+from .nn_block_bert import BERTEncoderBlock
 from src.core.layers.position_encoding import LearnAbsPosEnc, TrigonoAbsPosEnc
 from .config_bert import bertConfig
 

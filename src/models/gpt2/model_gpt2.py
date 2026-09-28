@@ -1,6 +1,6 @@
 from src.core.architectures import DecoderOnly
 from src.core.layers.position_encoding import LearnAbsPosEnc
-from src.core.blocks.gpt2 import GPT2DecoderBlock
+from .nn_block_gpt2 import GPT2DecoderBlock
 from src.core.functional import segments_to_positions
 from src.core.generate import next_token_topk
 from .config_gpt2 import gpt2Config
