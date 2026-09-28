@@ -2,7 +2,7 @@ import torch
 from torch import nn
 import math
 from typing import Tuple
-from src.core.layers.attention_pool import MultiHeadAttention, CausalSelfMHA
+from src.core.layers.attention import MultiHeadAttention, CausalSelfMHA
 from src.core.layers.feedforward import relu_ffn
 
 
