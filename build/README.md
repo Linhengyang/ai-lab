@@ -1,3 +1,3 @@
-build binary files `**.so` to `{path}/{to}/aiml/bin`
+build binary files `**.so` to `{path}/{to}/ai-lab/build`
   
-add `{path}/{to}/aiml/bin` to env variable `PYTHONPATH`
+add `{path}/{to}/ai-lab/build` to env variable `PYTHONPATH`
