@@ -1,4 +1,4 @@
-# native c++/cuda implementation
+# native c++/cuda reusable implementation
 
-native C/C++/CUDA/Rust等代码，用于构建所有bindings，比如：  
+low-level Cython/C++/CUDA/Rust/Triton 等可复用代码，用于多个地方可复用的底层构建，比如：  
 distributed、kernels、runtime、boost等等
