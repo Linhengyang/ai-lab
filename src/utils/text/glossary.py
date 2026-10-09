@@ -256,7 +256,7 @@ def get_BPE_glossary(
             tokcombo_freqs, symbols = merge_maxfreq_token_pair(token_pairs_w_maxfreq, tokcombo_freqs, symbols, merge_mode)
     
     # 组装 symbols 和 EOW_token 成一个 dict: glossary
-    glossary = {'tokens': symbols, 'EOW_token': EOW_token}
+    glossary = Glossary(tokens=symbols, EOW_token=EOW_token)
     if isinstance(save_path, str):
         with open(save_path, 'w') as f:
             json.dump(glossary, f)
@@ -284,7 +284,7 @@ def merge_glossary(
         merge_tokens.union( set(glossary['tokens'][1:]) )
     
     merge_tokens = [EOW_token] + list(merge_tokens)
-    merged = {'tokens':merge_tokens, 'EOW_token':EOW_token}
+    merged = Glossary(tokens = merge_tokens, EOW_token = EOW_token)
     
     if isinstance(save_path, str):
         with open(save_path, 'w') as f:

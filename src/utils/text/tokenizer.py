@@ -1629,7 +1629,10 @@ class Word:
 
 
 class BBPETokenizer(baseBBPETokenizer):
-
+    '''
+    采用 huggingface bpe算法优化后的 Byte-level Byte-Pair-Encoding Tokenizer --> BBPETokenzier
+    bbpeTokenizer 是采用C++ boost的版本
+    '''
     def train_bpe(self, corpora, num_merges = None, verbose = True, bow_min_freq: int = 1, *args, **kwargs):
         self._clear() # BBPETokenizer 和 baseBBPETokenizer 一样, 只可以从头开始BPE train, 不支持中途续train. 清空 _merge_ranks & _vocab 等在初始化时得到的属性
         self._prepare_train(num_merges) # 由 explicit_n_vocab(如果存在) 确定 _num_merges. 若不存在, 则由 num_merges 确定 _num_merges

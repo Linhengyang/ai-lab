@@ -17,7 +17,6 @@ def count_corpus(sentences: list|tuple|set) -> t.Dict:
     explains:
         Count token frequencies 
     '''
-
     def flatten(lst):
         for item in lst:
             if isinstance(item, (list, tuple, set)):
