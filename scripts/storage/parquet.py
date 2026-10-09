@@ -2,7 +2,7 @@ import pyarrow.parquet as pq
 import pyarrow as pa
 
 
-def txt_to_pq(txt_path, pq_path, delimiter, colname, encoding='utf-8'):
+def txt_to_parquet(txt_path, pq_path, delimiter, colname, encoding='utf-8'):
     # 读取整个文件
     with open(txt_path, "r", encoding=encoding) as f:
         content = f.read()
